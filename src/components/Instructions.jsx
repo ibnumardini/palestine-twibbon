@@ -5,7 +5,7 @@ export const Instructions = () => {
     {
       step: 1,
       title: "Upload Foto",
-      description: "Pilih foto kece dari galeri mu",
+      description: "Pilih foto dari galeri mu",
     },
     {
       step: 2,
