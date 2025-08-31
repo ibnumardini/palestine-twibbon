@@ -72,4 +72,4 @@ Apache-2.0
 
 ## Author
 
-Muhammad Fatkurozi <hi@mardini.dev>
+Muhammad Fatkurozi <<hi@mardini.dev>>
