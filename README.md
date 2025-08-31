@@ -4,7 +4,7 @@
 
 A React-based web application for creating Palestine solidarity twibbons (profile picture frames).
 
-![Screenshot](public/ss.png)
+![Screenshot](public/ss.webp)
 
 ## Features
 
