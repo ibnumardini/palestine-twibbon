@@ -4,7 +4,7 @@ export const DownloadButton = ({ onClick, visible = false }) => {
   return (
     <button
       onClick={onClick}
-      className="ml-4 inline-flex items-center gap-x-2 py-3 px-6 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-colors"
+      className="mt-2 sm:mt-0 sm:ml-4 inline-flex items-center justify-center gap-x-2 py-3 px-4 sm:px-6 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-colors"
     >
       <svg
         className="w-5 h-5"

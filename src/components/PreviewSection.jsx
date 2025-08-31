@@ -39,8 +39,10 @@ export const PreviewSection = ({
           className="hidden"
         />
 
-        <UploadButton onClick={handleUploadClick} />
-        <DownloadButton onClick={handleDownload} visible={!!previewUrl} />
+        <div className="flex flex-col sm:flex-row sm:justify-center items-center">
+          <UploadButton onClick={handleUploadClick} />
+          <DownloadButton onClick={handleDownload} visible={!!previewUrl} />
+        </div>
       </div>
     </div>
   );
