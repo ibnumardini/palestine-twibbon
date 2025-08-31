@@ -1,6 +1,6 @@
 export const createTwibbonCanvas = (imageUrl, canvas) => {
   return new Promise((resolve, reject) => {
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
     const userImage = new Image();
     const palestineImage = new Image();
 
@@ -22,7 +22,7 @@ export const createTwibbonCanvas = (imageUrl, canvas) => {
       };
 
       palestineImage.onerror = reject;
-      palestineImage.src = "/palestine.png";
+      palestineImage.src = '/palestine.png';
     };
 
     userImage.onerror = reject;
@@ -51,8 +51,8 @@ export const calculateImageFit = (image, canvasWidth, canvasHeight) => {
   return { drawWidth, drawHeight, offsetX, offsetY };
 };
 
-export const downloadImage = (dataUrl, filename = "palestine-twibbon.png") => {
-  const link = document.createElement("a");
+export const downloadImage = (dataUrl, filename = 'palestine-twibbon.png') => {
+  const link = document.createElement('a');
   link.download = filename;
   link.href = dataUrl;
   link.click();

@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import { createTwibbonCanvas, downloadImage } from "../utils/twibbonUtils";
+import { useState, useRef } from 'react';
+import { createTwibbonCanvas, downloadImage } from '../utils/twibbonUtils';
 
 export const useTwibbon = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
@@ -9,7 +9,7 @@ export const useTwibbon = () => {
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
-    if (file && file.type.startsWith("image/")) {
+    if (file && file.type.startsWith('image/')) {
       const reader = new FileReader();
       reader.onload = async (e) => {
         try {
@@ -20,7 +20,7 @@ export const useTwibbon = () => {
           );
           setPreviewUrl(twibbonUrl);
         } catch (error) {
-          console.error("Error creating twibbon:", error);
+          console.error('Error creating twibbon:', error);
         }
       };
       reader.readAsDataURL(file);
