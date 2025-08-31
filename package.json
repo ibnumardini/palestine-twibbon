@@ -1,7 +1,6 @@
 {
   "name": "palestine-twibbon",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "author": "Muhammad Fatkurozi <hi@mardini.dev>",
   "license": "Apache-2.0",
