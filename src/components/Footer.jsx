@@ -1,3 +1,5 @@
+import { ShieldCheck } from 'lucide-react';
+
 export const Footer = () => {
   return (
     <div
@@ -12,9 +14,10 @@ export const Footer = () => {
     >
       <div className='max-w-4xl mx-auto px-4 text-center'>
         <p className='text-sm'>#freepalestine 🍉 #standwithpalestine 🇵🇸</p>
-        <div className='mt-3 inline-block px-2 py-1 bg-yellow-50 border border-yellow-200 text-yellow-700 rounded-md text-xs'>
-          <span className='font-bold'>100% Aman:</span> Semua proses dilakukan
-          di browser lokal!
+        <div className='mt-3 inline-flex items-center px-2 py-1 bg-yellow-50 border border-yellow-200 text-yellow-700 rounded-md text-xs'>
+          <ShieldCheck size={14} className='mr-1' />
+          <span className='font-bold mr-1'>100% Aman:</span> Semua proses dilakukan
+          di local browser!
         </div>
       </div>
     </div>
