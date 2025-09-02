@@ -1,5 +1,5 @@
-import { UploadButton } from './UploadButton';
-import { DownloadButton } from './DownloadButton';
+import { CloudUpload, Download } from 'lucide-react';
+import { Button } from './Button';
 
 export const PreviewSection = ({
   previewUrl,
@@ -40,8 +40,18 @@ export const PreviewSection = ({
         />
 
         <div className='flex flex-col sm:flex-row sm:justify-center items-center'>
-          <UploadButton onClick={handleUploadClick} />
-          <DownloadButton onClick={handleDownload} visible={!!previewUrl} />
+          <Button variant='primary' onClick={handleUploadClick}>
+            <CloudUpload />
+            Unggah
+          </Button>
+          <Button
+            variant='secondary'
+            onClick={handleDownload}
+            visible={!!previewUrl}
+          >
+            <Download />
+            Unduh
+          </Button>
         </div>
       </div>
     </div>
